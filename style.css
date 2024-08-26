@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Mocca+Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Mocca Script', Arial, sans-serif;
@@ -19,7 +23,6 @@ p {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     background-color: #1f1f1f;
     color: white;
@@ -82,17 +85,25 @@ header {
 }
 
 /* Carrinho */
-.mini-cart {
+#cart-icon {
+    cursor: pointer;
     position: fixed;
-    top: 20%;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#mini-cart {
+    position: fixed;
+    top: 60px;
     right: 20px;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
     padding: 20px;
-    display: none;
+    display: none; /* Escondido por padrão */
     z-index: 1000;
 }
 
@@ -151,27 +162,23 @@ header {
 .checkout-button:hover {
     background-color: #b07c00;
     transform: translateY(-2px);
-
 }
 
-.close-cart {
+.cart-close {
     background: none;
     border: none;
-    font-size: 1.8rem;
-    color: #444;
+    font-size: 1.5rem;
+    color: #c27e00;
+    cursor: pointer;
     position: absolute;
     top: 10px;
     right: 10px;
-    cursor: pointer;
-    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.close-cart:hover {
-    color: #c27e00;
+.cart-close:hover {
+    color: #8b5e34;
     transform: scale(1.1);
 }
-
-
 
 /* Footer */
 footer {
@@ -294,7 +301,7 @@ footer {
     transform: translateY(-2px);
 }
 
-/*  botão de excluir item do carrinho */
+/* Botão de excluir item do carrinho */
 .cart-item .remove-item {
     background: none;
     border: none;
@@ -309,3 +316,21 @@ footer {
     color: #8b5e34;
     transform: translateY(-2px);
 }
+
+/* Botão de fechar o carrinho */
+.cart-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #c27e00;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.cart-close:hover {
+    color: #8b5e34;
+    transform: scale(1.1);
+}
+
