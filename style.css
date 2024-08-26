@@ -93,6 +93,12 @@ header {
     z-index: 1000;
 }
 
+#cart-icon img {
+    width: 30px; /* Ajuste o tamanho da imagem do carrinho aqui */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease;
+}
+
 #mini-cart {
     position: fixed;
     top: 60px;
@@ -103,7 +109,8 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
     padding: 20px;
-    display: none; /* Escondido por padrão */
+    display: none;
+    /* escondido */
     z-index: 1000;
 }
 
