@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const cartTotal = document.querySelector('#cart-total');
         const cart = document.querySelector('#miniCart');
 
-        // Verifica se o item já existe no carrinho
+        // Ver se o item já existe no carrinho
         let existingItem = Array.from(cartItems.children).find(item => item.querySelector('h4').textContent === name);
         
         if (existingItem) {
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Adiciona um evento de clique para cada botão
     addToCartButtons.forEach(button => {
         button.addEventListener('click', function () {
-            // Obtém o produto associado ao botão clicado
+            // Tem o produto associado ao botão clicado
             const productCard = this.closest('.product-card');
             const productName = productCard.getAttribute('data-product-name');
             const productImg = productCard.getAttribute('data-product-img');
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cartIcon = document.getElementById('cart-icon');
     const miniCart = document.getElementById('miniCart');
 
-    // Função para abrir e fechar o mini-carrinho
+    // Função para abrir e fechar o carrinho
     cartIcon.addEventListener('click', () => {
         miniCart.style.display = miniCart.style.display === 'block' ? 'none' : 'block';
     });
