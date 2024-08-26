@@ -1,0 +1,1 @@
+The Mocca Spot é um projeto pessoal treineiro com as linguagens de programação básicas (HTML, CSS, JS). Foi pensado como um simples ecomerce e desenvolvido assim. A escolha para uma cafeteria foi no aleatório mesmo.
